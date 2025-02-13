@@ -11,7 +11,7 @@ function convert(){
         if(value.includes(':')){
             value.split(':').forEach(row=>{
                 row.split('*').forEach(el=>{
-                    block += convertThis(el,row.split('*').length);
+                    block += convertThis(el,value.split(':').length);
                 });
                 block += '<br>';
             });
