@@ -14,7 +14,20 @@ function convert(){
                 // block starts here
             }
             else{
-                output.innerHTML += convertThis(i);
+                switch(str){
+                    case '!':
+                        output.innerHTML += '<br>';
+                        break;
+                    case '.':
+                        output.innerHTML += '<div class="half-space"></div>';
+                        break;
+                    case '..':
+                        output.innerHTML += '<div class="space"></div>';
+                        break;
+                    default:
+                        output.innerHTML += convertThis(i);
+                        break;
+                }
             }
         }
         else{
@@ -27,16 +40,6 @@ function convert(){
 
 function convertThis(str){
     let className = '';
-    switch(str){
-        case '!':
-            return '<br>';
-        case '.':
-            return '<div class="half-space"></div>';
-        case '..':
-            return '<div class="half-space"></div>';
-        default:
-            break;
-    }
     switch(str.slice(-1)){
         case '\\':
             className = 'x-reversed';
@@ -51,6 +54,7 @@ function convertThis(str){
             className = 'right-rotated';
             break;
         default:
+            str += '0';
             break;
     }
     str.pop();
