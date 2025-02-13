@@ -23,7 +23,7 @@ img{
 .grid{
     display: grid;
     place-items: center;
-    gap:0;
+    gap: 0;
 }
 
 .x-reversed{
