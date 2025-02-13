@@ -1,20 +1,21 @@
 const input = document.getElementById('input');
 const output = document.getElementById('output');
 const blockers = ['*', ':'];
-let isBlocking = 0;
+let isBlocking = false;
 
 input.oninput = convert;
 
 function convert(){
+    output.innerHTML = '';
     const arr = input.value.split(/[- ]/);
-    for(const [i, n] of arr.entries()){
-        if(isBlocking == 0){
-            if(n < arr.length-1 && blockers.includes(arr[n+1])){
-                isBlocking = 1;
+    for(const [index, value] of arr.entries()){
+        if(!isBlocking){
+            if(index < arr.length-1 && blockers.includes(arr[index+1])){
+                isBlocking = true;
                 // block starts here
             }
             else{
-                switch(str){
+                switch(value){
                     case '!':
                         output.innerHTML += '<br>';
                         break;
@@ -25,14 +26,18 @@ function convert(){
                         output.innerHTML += '<div class="space"></div>';
                         break;
                     default:
-                        output.innerHTML += `<div class="block"><div class="grid">${convertThis(i)}</div></div>`;
+                        output.innerHTML += `<div class="block"><div class="grid">${convertThis(value)}</div></div>`;
                         break;
                 }
             }
         }
         else{
-            if(n == arr.length-1 || !blockers.includes(arr[n+1])){
+            if(index == arr.length-1 || !blockers.includes(arr[index+1])){
                 // block ends here
+                isBlocking = false;
+            }
+            else{
+                // accumulating...
             }
         }
     }
@@ -57,6 +62,6 @@ function convertThis(str){
             str += '0';
             break;
     }
-    str.pop();
+    str = str.slice(0, -1);
     return `<img${className.length > 0 ? ' class="' + className + '"' : ''} src="imgs/${str}.PNG">`;
 }
