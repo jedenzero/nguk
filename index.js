@@ -25,7 +25,7 @@ function convert(){
                         output.innerHTML += '<div class="space"></div>';
                         break;
                     default:
-                        output.innerHTML += convertThis(i);
+                        output.innerHTML += `<div class="block"><div class="grid">${convertThis(i)}</div></div>`;
                         break;
                 }
             }
@@ -58,5 +58,5 @@ function convertThis(str){
             break;
     }
     str.pop();
-    return `<img${className.length > 0 ? ' class="' + className + '"' : ''} src="imgs/${str}.png">`;
+    return `<img${className.length > 0 ? ' class="' + className + '"' : ''} src="imgs/${str}.PNG">`;
 }
