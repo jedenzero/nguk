@@ -11,7 +11,7 @@ function convert(){
     for(const [index, value] of arr.entries()){
         if(value.includes(':')){
             value.split(':').forEach(row=>{
-                grid.push(0)
+                grid.push(0);
                 row.split('*').forEach(el=>{
                     grid[grid.length - 1]++;
                     block += convertThis(el,value.split(':').length);
@@ -66,14 +66,16 @@ function convertThis(str,h){
 
 function readGrid(arr){
     let css = '';
+    let row = '';
     let i = 0;
     
     arr.forEach(n=>{
+        row = '';
         for(j=0;j<n;j++){
-            css += `a${i+j} `;
+            row += `a${i+j} `;
         }
         i += n;
-        css = css.trim() + '\n';
+        css += `'${row.trim()}' `;
     });
     
     return css.trim();
