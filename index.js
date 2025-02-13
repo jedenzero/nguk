@@ -19,7 +19,7 @@ function convert(){
                 });
             });
             mul = 1;
-            arr.forEach(n=>{mul *= n;});
+            grid.forEach(n=>{mul *= n;});
             output.innerHTML += `<div class="block"><div class="grid" style="grid-template-columns:repeat(${mul},minmax(16px,32px));grid-template-areas:${readGrid(grid)}">${block}</div></div>`;
             block = '';
             grid = [];
