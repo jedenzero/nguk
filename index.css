@@ -18,7 +18,6 @@ img{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(32px, 1fr));
     place-items: center;
 }
 
@@ -39,11 +38,13 @@ img{
 }
 
 .half-space{
+    display: inline-block;
     width: 16px;
     height: 32px;
 }
 
 .space{
+    display: inline-block;
     width: 32px;
     height: 32px;
 }
