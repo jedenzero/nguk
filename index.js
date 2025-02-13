@@ -15,7 +15,7 @@ function convert(){
                 grid.push(0);
                 row.split('*').forEach(el=>{
                     grid[grid.length - 1]++;
-                    block += convertThis(el,value.split(':').length);
+                    block += `<div style="text-align:center;">${convertThis(el,value.split(':').length)}</div>`;
                 });
             });
             mul = 1;
