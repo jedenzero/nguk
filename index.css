@@ -9,6 +9,7 @@ body{
 
 img{
     display: inline-block;
+    max-width: 32px;
     max-height: 32px;
     width: auto;
     height: auto;
@@ -16,12 +17,14 @@ img{
 
 .block{
     display: inline-block;
+    width: max-content;
     height: 32px;
     vertical-align: top;
 }
 
 .grid{
     display: grid;
+    width: 100%;
     place-items: center;
     gap: 0;
 }
