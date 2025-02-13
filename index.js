@@ -54,5 +54,5 @@ function convertThis(str){
             break;
     }
     str.pop();
-    return `<img${className.length > 0 ? ' class="' + className + '"' : ''} src="${str}.png">`;
+    return `<img${className.length > 0 ? ' class="' + className + '"' : ''} src="imgs/${str}.png">`;
 }
