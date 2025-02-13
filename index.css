@@ -17,7 +17,7 @@ img{
 
 .block{
     display: inline-block;
-    width: 32px;
+    min-width: 32px;
     height: 32px;
 }
 
