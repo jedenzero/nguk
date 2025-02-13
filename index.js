@@ -1,6 +1,7 @@
 const input = document.getElementById('input');
 const output = document.getElementById('output');
 let block = '';
+let grid = [];
 
 input.oninput = convert;
 
@@ -10,13 +11,15 @@ function convert(){
     for(const [index, value] of arr.entries()){
         if(value.includes(':')){
             value.split(':').forEach(row=>{
+                grid.push(0)
                 row.split('*').forEach(el=>{
+                    grid[grid.length - 1]++;
                     block += convertThis(el,value.split(':').length);
                 });
-                block += '<br>';
             });
-            output.innerHTML += `<div class="block"><div class="grid">${block.slice(0,-4)}</div></div>`;
+            output.innerHTML += `<div class="block"><div class="grid" style="grid-template-areas:${readGrid(grid)}">${block}</div></div>`;
             block = '';
+            grid = [];
         }
         else{
             switch(value){
@@ -57,5 +60,21 @@ function convertThis(str,h){
             break;
     }
     str = str.slice(0, -1);
+    
     return `<img${className.length > 0 ? ' class="' + className + '"' : ''} ${h>0 ? 'style="width:32px;height:' + 32/h + 'px;"' : ''} src="imgs/${str}.PNG">`;
+}
+
+function readGrid(arr){
+    let css = '';
+    let i = 0;
+    
+    arr.forEach(n=>{
+        for(j=0;j<n;j++){
+            css += `a${i+j} `;
+        }
+        i += n;
+        css = css.trim() + '\n';
+    });
+    
+    return css.trim();
 }
