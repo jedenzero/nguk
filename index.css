@@ -3,22 +3,18 @@ body{
 }
 
 img{
-    display: inline-box;
+    display: inline-block;
 }
 
-table{
-    display: flex;
-    border-collapse: collapse;
+.block{
+    display: inline-block;
+    height: 100px;
 }
 
-th, td{
-    text-align: center;
-    vertical-align: middle;
-    padding: 0;
-}
-
-.table-container{
-    display: inline-box;
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    place-items: center;
 }
 
 .x-reversed{
@@ -35,4 +31,8 @@ th, td{
 
 .right-rotated{
     transform: rotate(90deg);
+}
+
+.output>*{
+    display: inline-block;
 }
