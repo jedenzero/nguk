@@ -2,6 +2,7 @@ const input = document.getElementById('input');
 const output = document.getElementById('output');
 let block = '';
 let grid = [];
+let mul = 1; // multiplied result
 
 input.oninput = convert;
 
@@ -17,7 +18,9 @@ function convert(){
                     block += convertThis(el,value.split(':').length);
                 });
             });
-            output.innerHTML += `<div class="block"><div class="grid" style="grid-template-areas:${readGrid(grid)}">${block}</div></div>`;
+            mul = 1;
+            arr.forEach(n=>{mul *= n;});
+            output.innerHTML += `<div class="block"><div class="grid" style="grid-template-columns:repeat(${mul},minmax(16px,32px));grid-template-areas:${readGrid(grid)}">${block}</div></div>`;
             block = '';
             grid = [];
         }
@@ -72,7 +75,7 @@ function readGrid(arr){
     arr.forEach(n=>{
         row = '';
         for(j=0;j<n;j++){
-            row += `a${i+j} `;
+            row += `a${i+j} `.repeat(mul/n);
         }
         i += n;
         css += `'${row.trim()}' `;
