@@ -9,14 +9,14 @@ function convert(){
     const arr = input.value.split(/[- ]/);
     for(const [index, value] of arr.entries()){
         if(value.includes(':')){
-            block = '';
             value.split(':').forEach(row=>{
-                el.split('*').forEach(el=>{
+                row.split('*').forEach(el=>{
                     block += convertThis(el);
                 });
                 block += '<br>';
             });
-            output.innerHTML += `<div class="block"><div class="grid">${block}</div></div>`;
+            output.innerHTML += `<div class="block"><div class="grid">${block.slice(0,-4)}</div></div>`;
+            block = '';
         }
         else{
             switch(value){
