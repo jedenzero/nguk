@@ -17,6 +17,7 @@ img{
 .block{
     display: inline-block;
     height: 32px;
+    vertical-align: top;
 }
 
 .grid{
