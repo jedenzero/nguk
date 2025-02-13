@@ -24,7 +24,7 @@ img{
     display: grid;
     place-items: center;
     gap: 0;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 32px));
+    grid-template-columns: repeat(auto-fit, minmax(32px, 1fr));
 }
 
 .x-reversed{
