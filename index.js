@@ -38,7 +38,7 @@ function convert(){
                     output.innerHTML += '<div class="space"></div>';
                     break;
                 default:
-                    output.innerHTML += `<div class="block"><div class="grid">${convertThis(value,0)}</div></div>`;
+                    output.innerHTML += `<div class="block"><div class="grid">${convertThis(value,1)}</div></div>`;
                     break;
             }
         }
@@ -66,7 +66,7 @@ function convertThis(str,h){
     }
     str = str.slice(0, -1);
     
-    return `<div class="img${className.length > 0 ? ' ' + className : ''}" style="width:32px;${h>0 ? 'height:' + 32/h + 'px;' : ''}background-image:url(imgs/${str}.svg);">`;
+    return `<div class="img${className.length > 0 ? ' ' + className : ''}" style="width:32px;height:${32/h}px;background-image:url(imgs/${str}.svg);">`;
 }
 
 function readGrid(arr){
