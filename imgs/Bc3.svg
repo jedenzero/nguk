@@ -4,7 +4,7 @@
 <svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="1100 600 800 810.355" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs/>
 <g id="Layer" vectornator:layerName="Layer">
-<path vector-effect="non-scaling-stroke" d="M1375 750C1375 680.964 1430.96 625 1500 625C1569.04 625 1625 680.964 1625 750C1625 819.036 1569.04 875 1500 875C1430.96 875 1375 819.036 1375 750Z" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="50" vectornator:layerName="타원 1"/>
+<path vector-effect="non-scaling-stroke" d="M1375 750C1375 680.964 1430.96 625 1500 625C1569.04 625 1625 680.964 1625 750C1625 819.036 1569.04 875 1500 875C1430.96 875 1375 819.036 1375 750Z" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1" vectornator:layerName="타원 1"/>
 <path vector-effect="non-scaling-stroke" d="M1500 875L1500 1375" fill="none" opacity="1" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="1" vectornator:layerName="선 1"/>
 <path vector-effect="non-scaling-stroke" d="M1500 875L1125 1250" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1" vectornator:layerName="선 2"/>
 <path vector-effect="non-scaling-stroke" d="M1500 875L1875 1250" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1" vectornator:layerName="선 3"/>
