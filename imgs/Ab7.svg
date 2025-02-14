@@ -4,8 +4,8 @@
 <svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="-25 600 800 800" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs/>
 <g id="Layer" vectornator:layerName="Layer">
-<path vector-effect="non-scaling-stroke" d="M0 1125L125 875L250 1125L375 875L500 1125L625 875L750 1125" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="5" vectornator:layerName="곡선 1"/>
-<path vector-effect="non-scaling-stroke" d="M2.27374e-13 875L125 625L250 875L375 625L500 875L625 625L750 875" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="5" vectornator:layerName="곡선 2"/>
-<path vector-effect="non-scaling-stroke" d="M2.27374e-13 1375L125 1125L250 1375L375 1125L500 1375L625 1125L750 1375" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="5" vectornator:layerName="곡선 3"/>
+<path vector-effect="non-scaling-stroke" d="M0 1125L125 875L250 1125L375 875L500 1125L625 875L750 1125" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1" vectornator:layerName="곡선 1"/>
+<path vector-effect="non-scaling-stroke" d="M2.27374e-13 875L125 625L250 875L375 625L500 875L625 625L750 875" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1" vectornator:layerName="곡선 2"/>
+<path vector-effect="non-scaling-stroke" d="M2.27374e-13 1375L125 1125L250 1375L375 1125L500 1375L625 1125L750 1375" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1" vectornator:layerName="곡선 3"/>
 </g>
 </svg>
