@@ -74,7 +74,7 @@ function readGrid(arr){
     
     arr.forEach(n=>{
         row = '';
-        for(j=0;j<n;j++){
+        for(let j=0;j<n;j++){
             row += `a${i+j} `.repeat(mul/n);
         }
         i += n;
