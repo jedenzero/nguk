@@ -3,7 +3,6 @@ const output = document.getElementById('output');
 let block = '';
 let grid = [];
 let mul = 1; // multiplied result
-let max = 0;
 
 input.oninput = convert;
 
@@ -16,13 +15,12 @@ function convert(){
                 grid.push(0);
                 row.split('*').forEach(el=>{
                     grid[grid.length - 1]++;
-                    block += `<div style="text-align:center;">${convertThis(el,value.split(':').length)}</div>`;
+                    block += convertThis(el,value.split(':').length);
                 });
             });
             mul = 1;
-            max = 0;
-            grid.forEach(n=>{mul *= n;if(max < n){max = n}});
-            output.innerHTML += `<div class="block"><div class="grid" style="grid-template-columns:repeat(${max},minmax(16px,32px));grid-template-areas:${readGrid(grid)}">${block}</div></div>`;
+            grid.forEach(n=>{mul *= n;});
+            output.innerHTML += `<div class="block"><div class="grid" style="grid-template-columns:repeat(${mul},minmax(16px,32px));grid-template-areas:${readGrid(grid)}">${block}</div></div>`;
             block = '';
             grid = [];
         }
