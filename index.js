@@ -13,9 +13,9 @@ function convert(){
         if(value.includes(':')){
             value.split(':').forEach(row=>{
                 grid.push(0);
-                row.split('*').forEach(el=>{
+                for(const [i, el] of row.split('*').entries()){
                     grid[grid.length - 1]++;
-                    block += convertThis(el,value.split(':').length);
+                    block += `<div style="grid-area:a${i}">${convertThis(el,value.split(':').length)}</div>`;
                 });
             });
             mul = 1;
