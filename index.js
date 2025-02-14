@@ -3,6 +3,7 @@ const output = document.getElementById('output');
 let block = '';
 let grid = [];
 let mul = 1; // multiplied result
+let max = 0;
 
 input.oninput = convert;
 
@@ -19,8 +20,9 @@ function convert(){
                 });
             });
             mul = 1;
-            grid.forEach(n=>{mul *= n;});
-            output.innerHTML += `<div class="block"><div class="grid" style="grid-template-columns:repeat(${mul},minmax(16px,32px));grid-template-areas:${readGrid(grid)}">${block}</div></div>`;
+            max = 0;
+            grid.forEach(n=>{mul *= n;if(max < n){max = n}});
+            output.innerHTML += `<div class="block"><div class="grid" style="grid-template-columns:repeat(${max},minmax(16px,32px));grid-template-areas:${readGrid(grid)}">${block}</div></div>`;
             block = '';
             grid = [];
         }
