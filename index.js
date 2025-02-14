@@ -11,11 +11,13 @@ function convert(){
     const arr = input.value.split(/[- ]/);
     for(const [index, value] of arr.entries()){
         if(value.includes(':')){
+            let i = 0;
             value.split(':').forEach(row=>{
                 grid.push(0);
-                for(const [i, el] of row.split('*').entries()){
+                row.split('*').forEach(el=>{
                     grid[grid.length - 1]++;
                     block += `<div style="grid-area:a${i}">${convertThis(el,value.split(':').length)}</div>`;
+                    i++;
                 });
             });
             mul = 1;
