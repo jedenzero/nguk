@@ -16,7 +16,7 @@ function convert(){
                 grid.push(0);
                 row.split('*').forEach(el=>{
                     grid[grid.length - 1]++;
-                    block += `<div style="grid-area:a${i}">${convertThis(el,value.split(':').length)}</div>`;
+                    block += `<div style="grid-area:a${i}">${convertThis(el,row.split('*').length,value.split(':').length)}</div>`;
                     i++;
                 });
             });
@@ -38,14 +38,14 @@ function convert(){
                     output.innerHTML += '<div class="space"></div>';
                     break;
                 default:
-                    output.innerHTML += `<div class="block"><div class="grid">${convertThis(value,1)}</div></div>`;
+                    output.innerHTML += `<div class="block"><div class="grid">${convertThis(value,1,1)}</div></div>`;
                     break;
             }
         }
     }
 }
 
-function convertThis(str,h){
+function convertThis(str,w,h){
     let className = '';
     switch(str.slice(-1)){
         case '\\':
@@ -66,7 +66,7 @@ function convertThis(str,h){
     }
     str = str.slice(0, -1);
     
-    return `<div class="img${className.length > 0 ? ' ' + className : ''}" style="width:32px;height:${32/h}px;background-image:url(imgs/${str}.svg);">`;
+    return `<div class="img${className.length > 0 ? ' ' + className : ''}" style="width:${32/w}px;height:${32/h}px;background-image:url(imgs/${str}.svg);">`;
 }
 
 function readGrid(arr){
