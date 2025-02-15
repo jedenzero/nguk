@@ -9,6 +9,7 @@ body{
 
 .img{
     display: inline-block;
+    width:32px;
     background-size: 100% 100%;
 }
 
