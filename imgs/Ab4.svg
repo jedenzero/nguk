@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="2124.29 624.293 751.414 751.414" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Layer" vectornator:layerName="Layer">
+<path vector-effect="non-scaling-stroke" d="M2500 625L2500 1375" fill="none" opacity="1" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="1" vectornator:layerName="선 8"/>
+<path vector-effect="non-scaling-stroke" d="M2125 1000L2875 1000" fill="none" opacity="1" stroke="#000000" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="1" vectornator:layerName="선 9"/>
+<path vector-effect="non-scaling-stroke" d="M2125 625L2406.25 906.25" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1" vectornator:layerName="선 10"/>
+<path vector-effect="non-scaling-stroke" d="M2593.75 1093.75L2875 1375" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1" vectornator:layerName="선 11"/>
+<path vector-effect="non-scaling-stroke" d="M2875 625L2593.75 906.25" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1" vectornator:layerName="선 12"/>
+<path vector-effect="non-scaling-stroke" d="M2406.25 1093.75L2125 1375" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1" vectornator:layerName="선 13"/>
+</g>
+</svg>
