@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="2.27374e-13 625 750 750" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Layer" vectornator:layerName="Layer">
+    <path d="M2.27374e-13 625L750 625L750 1375L2.27374e-13 1375L2.27374e-13 625Z" fill="#3395ff" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="직사각형 1"/>
+    <path d="M328.125 906.25C328.125 880.362 349.112 859.375 375 859.375C400.888 859.375 421.875 880.362 421.875 906.25C421.875 932.138 400.888 953.125 375 953.125C349.112 953.125 328.125 932.138 328.125 906.25Z" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1" vector-effect="non-scaling-stroke" vectornator:layerName="타원 7"/>
+    <path d="M234.375 1046.87C234.375 1020.99 255.362 1000 281.25 1000C307.138 1000 328.125 1020.99 328.125 1046.87C328.125 1072.76 307.138 1093.75 281.25 1093.75C255.362 1093.75 234.375 1072.76 234.375 1046.87Z" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1" vector-effect="non-scaling-stroke" vectornator:layerName="타원 5"/>
+    <path d="M421.875 1046.88C421.875 1020.99 442.862 1000 468.75 1000C494.638 1000 515.625 1020.99 515.625 1046.88C515.625 1072.76 494.638 1093.75 468.75 1093.75C442.862 1093.75 421.875 1072.76 421.875 1046.88Z" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1" vector-effect="non-scaling-stroke" vectornator:layerName="타원 6"/>
+</g>
+</svg>
