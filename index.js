@@ -16,7 +16,7 @@ function convert(){
                 grid.push(0);
                 row.split('*').forEach(el=>{
                     grid[grid.length - 1]++;
-                    block += `<div style="grid-area:a${i}" style="width:${32/row.split('*').length}px;height:${32/value.split(':').length}px;">${convertThis(el)}</div>`;
+                    block += `<div style="grid-area:a${i};width:${32/row.split('*').length}px;height:${32/value.split(':').length}px;">${convertThis(el)}</div>`;
                     i++;
                 });
             });
