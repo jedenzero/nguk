@@ -66,7 +66,7 @@ function convertThis(str){
     }
     str = str.slice(0, -1);
     
-    return `<img class="img${className.length > 0 ? ' ' + className : ''}" href="imgs/${str}.svg;">`;
+    return `<img class="img${className.length > 0 ? ' ' + className : ''}" src="imgs/${str}.svg;">`;
 }
 
 function readGrid(arr){
